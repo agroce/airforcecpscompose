@@ -1,0 +1,139 @@
+%\documentclass{sig-alternate}
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage{url}
+\usepackage{code}
+\usepackage{amsmath}
+\usepackage{algpseudocode} 
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{xcolor}
+\usepackage{setspace}
+%\usepackage{flushend}
+
+\newcommand{\mycomment}[1]{}
+
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+\doublespacing
+
+% DOI
+%\acmDOI{10.475/123_4}
+
+% ISBN
+%\acmISBN{123-4567-24-567/08/06}
+
+%%% The following is specific to TECPS'17 and the paper
+%%% 'Towards Automated Composition of Heterogeneous Tests for Cyber-Physical Systems'
+%%% by Alex Groce, Paul Flikkema, and Josie Holmes.
+%%%
+
+
+\begin{document}
+
+\title{Section A\\Title: Automated Composition of Heterogeneous Tests for
+  Cyber-Physical Systems}
+%\title{Normalizing and Generalizing Test Cases}
+
+\author{Alex Groce and Paul Flikkema\\
+School of Informatics, Computing, and Cyber Systems \\
+  Northern Arizona University, USA}
+
+%\numberofauthors{3}
+
+%\alignauthor
+%Alex Groce\\
+%       \affaddr{School of Electrical Engineering and Computer Science}\\
+%       \affaddr{Oregon State University}\\
+%       \email{agroce@gmail.com}
+% 2nd. author
+%\alignauthor
+%Josie Holmes\\
+%       \affaddr{Department of Geography}\\
+%       \affaddr{Pennsylvania State University}\\
+%       \email{webmaster@marysville-ohio.com}
+% 3rd. author
+%\alignauthor Kevin Kellar\\
+%       \affaddr{Crescent Valley High School}\\
+%       \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
+%      \affaddr{Hekla, Iceland}\\
+%      \email{larst@affiliation.org}
+%}
+
+
+%\begin{abstract}
+%\input{abstract}
+%\end{abstract}
+
+\mycomment{
+
+\author{\IEEEauthorblockN{%
+Alex Groce,\IEEEauthorrefmark{1}
+Josie Holmes\IEEEauthorrefmark{2}
+Kevin Kellar\IEEEauthorrefmark{3}
+}
+
+\IEEEauthorblockA{\IEEEauthorrefmark{1}%
+School of Electrical Engineering and Computer Science\\
+Oregon State University\\
+\IEEEauthorrefmark{2}
+Department of Geography\\
+Pennsylvania State University
+\IEEEauthorrefmark{3}
+Crescent Valley High School
+}
+
+
+}
+%\author{\IEEEauthorblockN{Alex Groce, Amin Alipour, Chaoqiang Zhang, Yang Chen, John Regehr}
+%\IEEEauthorblockA{School of Electrical Engineering and Computer Science\\
+%Oregon State University, Corvallis, OR\\
+%Email: agroce@gmail.com, alipourm,zhangch@onid.oregonstate.edu}}
+}
+
+\mycomment{
+\numberofauthors{1}
+\author{
+\alignauthor
+Arpit Christi, Matthew Lyle Olson, Mohammad Amin Alipour, Alex Groce\\
+\affaddr{School of Electrical Engineering and Computer Science}\\
+\affaddr{Oregon State University}
+\affaddr{Corvallis, OR USA}\\
+%\affaddr{Corvallis, OR}\\
+%\affaddr{USA}
+}
+}
+
+\maketitle
+\newpage
+\section{Section B}
+
+\section{Section C}
+\input{intro}
+
+\input{compose}
+%\input{formal}
+
+%\input{casestudies}
+
+%\input{related}
+
+
+
+%\input{conclusions}
+
+%\IEEEtriggeratref{21}
+
+%\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+
+%\def\IEEEbibitemsep{0.6pt plus 0.9pt}
+
+\bibliographystyle{abbrv}
+\bibliography{bibliography}
+
+\end{document}
