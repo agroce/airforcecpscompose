@@ -1,4 +1,4 @@
-\section{Automated Composition of Tests}
+\subsection{Automated Composition of Tests}
 Even without a better system architecture, some of the problems of CPS design could be mitigated by making use of existing tests for layers of a system.  These tests are often,
 particularly for the safety-critical system, extensive and useful;
 however, they typically fail to cover the interaction of the systems
@@ -38,7 +38,7 @@ delta-debugging can effectively automatically compose some (even quite heterogen
 concept is to let the delta-debugging algorithm remove portions of a
 constructed \emph{hypothesis composition} to produce a test that has more
 behavior than the na\"ive composition, and ideally detects a fault in
-the composition of the systems.
+the composition of the systems \cite{tecpscompose}.
 
 As an example of the problem, consider the following situation, a simplified generalization of testing efforts at NASA's Jet Propulsion
 Laboratory, during the development of the Curiosity Mars Rover (Mars
@@ -305,11 +305,12 @@ embedded systems; we can use cause reduction with instrumentation only
 for user-centric code or, in the worst case, for neither system.  This
 necessitates guidance by other means.
 
-\section{An Architecture for Testable Cyber-physical Systems}
+\mycomment{
+\subsection{An Architecture for Testable Cyber-physical Systems}
 
 One such means, though less well-defined at this point, is a means for expressing, via software architectural methods, the connections between domains at varying levels of abstraction.  In addition to supporting test composition (by, e.g., making explicit constraints such as those that the catalog imposes, mapped to a lower-level of abstraction), this approach would ideally enable effective testing of layers in combination with architectural models, in addition to concrete implementations.  Because complex CPS require thorough testing, given their connection to the physical world, we also aim to generally improve testability by architectural means.  For example, standardized interface descriptions could facilitate automated generation of tests at the boundaries between subsystems.
 
-\mycomment{
+
 The sketch of a composition approach here is, of course, highly
 incomplete. We must determine, for example, how best to choose initial
 values for $k$, how to identify and make modifications to
